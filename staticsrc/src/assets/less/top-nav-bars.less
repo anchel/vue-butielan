@@ -1,0 +1,85 @@
+@import "base";
+
+header{
+  .all;
+  .margin;
+  background-color: @599;
+}
+
+
+.btl-head-nav,
+.btl-head-fy{
+  .all;
+  .px2rem(height,86);
+  .top-nav-bar{
+    .all;
+    .flexbox;
+    .margin;
+    margin-top: 0.15rem;
+    .radius(3px);
+    .px2rem(width,420);
+    .px2rem(height,58);
+    border: 1px solid @f;
+    .nbar-cell{
+      .por;
+      .hid;
+      .flexvalue;
+      color: @f;
+      font-size: 0.30rem;
+      border-right: 1px solid rgba(255,255,255,1);
+      &:nth-last-of-type(1){
+        border-right: 0px solid rgba(255,255,255,1);
+      }
+    }
+    .active{
+      background-color: @f;
+      color: @599;
+    }
+  }
+}
+
+.btl-head-fy{
+  .top-nav-bar{
+    .px2rem(width,304);
+  }
+  img{
+    .px2rem(height,42);
+    .px2rem(line-height,42);
+    .poa;
+    top: 50%;
+    left: 0.3rem;
+    .translate3d(@x:0);
+    display: block;
+  }
+}
+
+.btl-top-nav{
+  .all;
+  .px2rem(height,90);
+  .px2rem(line-height,90);
+  color: @f;
+  font-size: 0.34rem;
+  background-color: @599;
+  text-align: center;
+  img{
+    .px2rem(height,42);
+    .px2rem(line-height,42);
+    .poa;
+    top: 50%;
+    left: 0.3rem;
+    .translate3d(@x:0);
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

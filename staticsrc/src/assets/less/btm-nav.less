@@ -1,0 +1,105 @@
+@import "base";
+
+.btm-nav{
+	.px2rem(height,98);
+	background-color: @f;
+	.nav-bar-b{
+		.px2rem(height,98);
+		.flexbox;
+		.nav-list-b{
+			display: block;
+			.flexvalue;
+			&:nth-of-type(1){
+				.nav-img-b{
+					background-image: url("../img/icon-05.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+			}
+			&:nth-of-type(2){
+				.nav-img-b{
+					background-image: url("../img/icon-06.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+			}
+			&:nth-of-type(3){
+				.nav-img-b{
+					background-image: url("../img/icon-07.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+			}
+			&:nth-of-type(4){
+				.nav-img-b{
+					background-image: url("../img/icon-08.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+			}
+			&:nth-of-type(1).active{
+				.nav-img-b{
+					background-image: url("../img/icon-19.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+				.nav-text-b{
+					color: @599;
+				}
+			}
+			&:nth-of-type(2).active{
+				.nav-img-b{
+					background-image: url("../img/icon-20.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+				.nav-text-b{
+					color: @599;
+				}
+			}
+			&:nth-of-type(3).active{
+				.nav-img-b{
+					background-image: url("../img/icon-21.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+				.nav-text-b{
+					color: @599;
+				}
+			}
+			&:nth-of-type(4).active{
+				.nav-img-b{
+					background-image: url("../img/icon-22.png");
+					background-size: 0.52rem 0.52rem;
+					background-repeat: no-repeat;
+				}
+				.nav-text-b{
+					color: @599;
+				}
+			}
+			.nav-img-b{
+				.all;
+				width: 0.52rem;
+				height: 0.52rem;
+				.margin;
+				img{
+					width: 0.52rem;
+					height: 0.52rem;
+					display: block;
+					.margin;
+				}
+			}
+			.nav-text-b{
+				.all;
+				color: @3;
+				font-size: 0.18rem;
+				text-align: center;
+			}
+		}
+		.active{
+			.nav-text-b{
+				color: @599;
+			}
+		}
+	}
+}

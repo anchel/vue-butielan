@@ -1,0 +1,126 @@
+@import "base";
+@import "btm-nav";
+
+
+
+/*******************************分割线***********************************/
+
+
+header{
+	.all;
+	.btl-head{
+		.px2rem(width,750);
+		.px2rem(height,418);
+		text-align: center;
+		background-color: #5991f3;
+		background-image: -webkit-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -moz-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -ms-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -o-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(89,145,243,1)', endColorstr='rgba(128,174,255,1)') !important;
+		.por;
+		.hid;
+		color: @f;
+		.muchmoney{
+			.all;
+			.px2rem(height,278);
+			img{
+				width: 0.42rem;
+				height: 0.42rem;
+				.poa;
+				top: 50%;
+				right: 0%;
+				.translate3d(@y:0);
+			}
+			.all-money{
+				
+				margin-top: 0.92rem;
+				.m-title{
+					font-size: 0.30rem;
+				}
+				.num-money{
+					font-size: 0.82rem;
+				}
+			}
+		}
+		.people{
+			.all;
+			.px2rem(height,140);
+			.peo-type{
+				.px2rem(height,68);
+				margin-top: 0.31rem;
+				.flexbox;
+				dl{
+					.flexvalue;
+					.por;
+					&:nth-of-type(1){
+						&:after{
+							content: "";
+							width: 1px;
+							height: 100%;
+							background-color: rgba(255,255,255,0.4);
+							.poa;
+							top: 0;
+							right: 0;
+						}
+					}
+					dt,dd{
+						.all;
+						display: block;
+					}
+					dt{
+						font-size: 0.24rem;
+					}
+					dd{
+						font-size: 0.30rem;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+
+section{
+	background-color: @f;
+	.pro-type{
+		.pro-cell{
+			.px2rem(width,250);
+			.px2rem(height,202);
+			display: block;
+			float: left;
+			text-align: center;
+			border-right: 1px solid @e2;
+			&:nth-of-type(3n){
+				border-right: 0px solid @e2;
+			}
+			&:nth-of-type(n + 4){
+				border-top: 1px solid @e2;
+			}
+			.cell-name{
+				height: 0.94rem;
+                line-height: 0.94rem;
+                margin-top: 0.24rem;
+				color: @8;
+				font-size: 0.24rem;
+			}
+			.cell-num{
+				color: @3;
+				font-size: 0.32rem;
+				.por;
+				.hid;
+				text-overflow: ellipsis;
+                white-space: normal;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+@import "base";
+@import "btm-nav";
+@import "top-nav-bars";
+
+
+
+/*******************************分割线***********************************/
+
+body{
+
+}
+
+
+section{
+  .all;
+  background-color: #f5f5f5;
+  .btl-content{
+    .all;
+    .fr-container{
+      .all;
+      .order-title{}
+      .navlist{}
+    }
+  }
+}
+
+
+
+.main-list{
+  background-color: @f;
+  margin-top: 0.20rem;
+  .navlist{
+    .all;
+    width: 7.18rem;
+    margin-left: 0.32rem;
+    li{
+      .all;
+      height: 1.78rem;
+      border-bottom: 1px solid @e2;
+      padding-right: 0.32rem;
+      &:nth-last-of-type(1){
+        border-bottom: 0px solid @e2;
+      }
+      .time-list{
+        .all;
+        width: 5.34rem;
+        height: @full;
+        padding-top: 0.29rem;
+        .col-time{
+          font-size: 0.26rem;
+          line-height: 0.61rem;
+        }
+        .apply-time{
+          font-size: 0.26rem;
+        }
+      }
+      .cost{
+        width: 1.52rem;
+        height: @full;
+        line-height: 1.22rem;
+        font-size: 0.32rem;
+        float: left;
+        text-align: center;
+      }
+    }
+  }
+}
+.main-earn{
+  .order-title{
+    .title-type{
+      &:after{
+        background-color: @12b;
+      }
+    }
+  }
+  .navlist{
+    .btn-pass-audit{
+      border: 1px solid @6;
+      color: @6;
+    }
+    .btn-pass-memlist{
+      border: 1px solid @6;
+      color: @6;
+    }
+  }
+}
+
+
+
+
+.order-title{
+  .px2rem(height,99);
+  .padding(0,0.32rem);
+  .por;
+  .hid;
+  color: @6;
+  border-bottom: 1px solid @e2;
+  .title-type{
+    .px2rem(width,558);
+    height: @full;
+    line-height: 0.99rem;
+    font-size: 0.34rem;
+    display: inline-block;
+    float: left;
+    .por;
+    .hid;
+    text-indent: 0.20rem;
+    &:after{
+      content: "";
+      width: 3px;
+      height: 0.26rem;
+      background-color: @fb3;
+      .poa;
+      top: 50%;
+      left: 0;
+      .translate3d(@x:0);
+    }
+    i{
+      color: @3;
+      font-style: normal;
+      font-size: 0.26rem;
+    }
+  }
+  .money-num-o{
+    .px2rem(width,128);
+    height: @full;
+    line-height: 0.79rem;
+    font-size: 0.36rem;
+    display: inline-block;
+    float: left;
+    text-align: right;
+  }
+}
+.time-list-w{
+  width: 4.00rem !important;
+}
+.month-income{
+  font-size: 0.28rem;
+  //height: 0.89rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  color: @3;
+  label{
+    width: 1.60rem;
+    height: @full;
+    line-height: 0.6rem;
+    display: inline-block;
+    color: @6;
+    img{
+      margin-top: -0.1rem;
+      margin-right: 0.15rem;
+      width: 0.42rem;
+      height: 0.42rem;
+    }
+  }
+}
+.income-data{
+  font-size: 0.26rem;
+  color: @8;
+}
+.btn-pass-audit,
+.btn-pass-memlist{
+  .poa;
+  top: 0.32rem;
+  right: 0.32rem;
+  font-size: 0.18rem;
+  color: @599;
+  outline: none;
+  border: 1px solid @599;
+  .radius(2px);
+  background-color: transparent;
+  padding: 0.05rem 0.21rem;
+}
+.btn-pass-memlist{
+  top: 0.95rem;
+}
+.see-more{
+  width: 0.34rem;
+  height: @full;
+  float: left;
+  img{
+    display: block;
+    width: 0.32rem;
+    height: 0.32rem;
+    margin-top: 0.45rem;
+  }
+}
+
+
+
+
+
+

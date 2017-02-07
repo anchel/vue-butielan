@@ -1,0 +1,129 @@
+@import "base";
+@import "top-nav-bars";
+
+
+
+/*******************************分割线***********************************/
+
+
+section{
+  .all;
+  .btl-content{
+    .all;
+    .fr-container{
+      .all;
+      .order-title{}
+      .navlist{}
+    }
+  }
+}
+.order-title{
+  .px2rem(height,99);
+  .padding(0,0.32rem);
+  .por;
+  .hid;
+  color: @6;
+  border-bottom: 1px solid @e2;
+  .title-type{
+    .px2rem(width,558);
+    height: @full;
+    line-height: 0.99rem;
+    font-size: 0.34rem;
+    display: inline-block;
+    float: left;
+    .por;
+    .hid;
+    text-indent: 0.20rem;
+    &:after{
+      content: "";
+      width: 3px;
+      height: 0.34rem;
+      background-color: @fb3;
+      .poa;
+      top: 50%;
+      left: 0;
+      .translate3d(@x:0);
+    }
+    i{
+      color: @3;
+      font-style: normal;
+    }
+  }
+  .money-num-o{
+    .px2rem(width,128);
+    height: @full;
+    line-height: 0.79rem;
+    font-size: 0.36rem;
+    display: inline-block;
+    float: left;
+    text-align: right;
+  }
+}
+.navlist{
+  .all;
+  padding-left: 0.32rem;
+  li{
+    .all;
+    white-space: nowrap;
+    border-bottom: 1px solid @e2;
+  }
+}
+
+.card-no{
+  line-height: 0.96rem;
+  overflow: hidden;
+  font-size: 0.26rem;
+  label{
+    display: inline-block;
+    color: @6;
+    height: 100%;
+  }
+  span{
+    color: @3;
+  }
+}
+
+.card-list-info{
+  width: 3.65rem;
+  display: inline-block;
+  padding: 0.28rem 0;
+}
+.card-list-time{
+  width: 3.0rem;
+  padding: 0.28rem 0;
+  display: inline-block;
+  text-align: right;
+  .month-income{
+    label{
+      width: @full;
+    }
+    .active{
+      color: @599;
+    }
+  }
+}
+
+.month-income{
+  font-size: 0.28rem;
+  //height: 0.89rem;
+  height: 0.65rem;
+  color: @3;
+  label{
+    width: 1.30rem;
+    height: @full;
+    line-height: 0.65rem;
+    display: inline-block;
+    color: @6;
+    img{
+      margin-top: -0.1rem;
+      margin-right: 0.15rem;
+      width: 0.42rem;
+      height: 0.42rem;
+    }
+  }
+}
+
+
+
+
+

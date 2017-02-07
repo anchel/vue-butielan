@@ -1,0 +1,10 @@
+node_modules
+.idea
+logs
+.DS_Store
+config/*.js
+!config/development.js
+
+public/static/img
+public/static/css
+public/static/js

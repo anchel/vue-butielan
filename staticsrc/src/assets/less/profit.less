@@ -1,0 +1,298 @@
+@import "base";
+@import "top-nav-bars";
+@import "btm-nav";
+
+
+
+/*******************************分割线***********************************/
+body{
+	background-color: @f;
+}
+
+header{
+	.all;
+	background-color: #5991f3;
+	background-image: -webkit-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+	background-image: -moz-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+	background-image: -ms-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+	background-image: -o-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+	background-image: linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(89,145,243,1)', endColorstr='rgba(128,174,255,1)') !important;
+	.btl-head{
+		.px2rem(width,750);
+		.px2rem(height,380);
+		text-align: center;
+		.por;
+		.hid;
+		color: @f;
+		.btl-top-nav{
+			background-color: transparent;
+		}
+		.muchmoney{
+			.all;
+			.px2rem(height,290);
+			text-align: left;
+			padding: 0 0.32rem;
+			.m-title{
+				.px2rem(height,88);
+				.px2rem(line-height,88);
+				font-size: 0.30rem;
+				.por;
+				.hid;
+			}
+			.num-money{
+				.px2rem(height,82);
+				.px2rem(line-height,82);
+				font-size: 0.82rem;
+				.por;
+				.deposit{
+					.por;
+					.hid;
+					padding-right: 2.0rem;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.take-out{
+					width: 1.30rem;
+					height: 0.54rem;
+					line-height: 0.54rem;
+					.poa;
+					top: 50%;
+					right: 0%;
+					.radius(3px);
+					.translate3d(@x:0);
+					outline: none;
+					border: 1px solid @f;
+					background-color: transparent;
+					font-size: 0.28rem;
+				}
+			}
+			.fenyun-money{
+				color: #c7d7fa;
+				font-size: 0.30rem;
+				margin-top: 0.45rem;
+			}
+		}
+	}
+}
+
+
+section{
+	.all;
+	background-color: @f;
+	.fr-container{
+		.all;
+		.nav-tabs{
+			.all;
+			.flexbox;
+			height: 0.80rem;
+			line-height: 0.80rem;
+			border-bottom: 1px solid @e2;
+			.a-cell{
+				.flexvalue;
+				color: @3;
+				font-size: 0.28rem;
+				box-sizing: border-box;
+				.por;
+				.hid;
+			}
+			.active{
+				&:after{
+					content: "";
+					width: 1.27rem;
+					height: 0.05rem;
+					background-color: @599;
+					.poa;
+					bottom: 0%;
+					left: 50%;
+					//.translate3d(@y:0);
+					margin-left: -0.635rem;
+					display: block;
+				}
+			}
+		}
+		.navlist{
+			.all;
+			width: 7.18rem;
+			margin-left: 0.32rem;
+			ul{
+				li{
+					.all;
+					height: 1.22rem;
+					border-bottom: 1px solid @e2;
+					padding-right: 0.32rem;
+					.time-list{
+						width: 5.34rem;
+						height: @full;
+						float: left;
+						.col-time{
+							font-size: 0.26rem;
+							line-height: 0.61rem;
+						}
+						.apply-time{
+							font-size: 0.26rem;
+						}
+					}
+					.cost{
+						width: 1.52rem;
+						height: @full;
+						line-height: 1.22rem;
+						font-size: 0.32rem;
+						float: left;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.time-list-w{
+	width: 5.00rem !important;
+}
+.month-income{
+	font-size: 0.32rem;
+	height: 0.62rem;
+	line-height: 0.79rem;
+	color: @3;
+}
+.income-data{
+	font-size: 0.26rem;
+	color: @8;
+}
+.earnings{
+	width: 1.52rem;
+	height: @full;
+	float: left;
+	.income-amount{
+		font-size: 0.32rem;
+		height: 0.62rem;
+		line-height: 0.79rem;
+		color: @3;
+	}
+	.amount-data{
+		font-size: 0.26rem;
+		color: @8;
+	}
+}
+.see-more{
+	width: 0.34rem;
+	height: @full;
+	float: left;
+	img{
+		display: block;
+		width: 0.32rem;
+		height: 0.32rem;
+		margin-top: 0.45rem;
+	}
+}
+
+
+
+.tixian{
+	.all;
+	height: @full;
+	.pof;
+	top: 50%;
+	left: 50%;
+	.translate3d;
+
+	.tx-container{
+		height: 6.46rem;
+		background-color: @f;
+		.por;
+		top: 51.5%;
+		.tx-title{
+			height: 1.09rem;
+			line-height: 1.09rem;
+			font-size: 0.30rem;
+			color: @3;
+			text-align: center;
+			border-bottom: 1px solid @e2;
+		}
+		.tx-info{
+			.all;
+			padding: 0 0 0 0.32rem;
+			.tx-cell{
+				display: block;
+				height: 0.96rem;
+				font-size: 0.28rem;
+				border-bottom: 1px solid @e2;
+				label{
+					width: 1.5rem;
+					height: @full;
+					line-height: 0.96rem;
+					color: @6;
+					display: inline-block;
+				}
+				i{
+					color: @3;
+					font-style: normal;
+					display: inline-block;
+					//text-indent: 0.30rem;
+					text-align: left;
+				}
+				span{
+					display: inline-block;
+				    width: 0.46rem;
+				    height: @full;
+				    float: right;
+				    margin-right: 0.32rem;
+				    img{
+				    	width: 0.46rem;
+				    	height: 0.46rem;
+				    	margin-top: 0.25rem;
+				    	display: block;
+				    }
+				}
+			}
+			.tx-cell-field{
+				display: block;
+				font-size: 0.26rem;
+				label{
+					line-height: 0.96rem;
+					display: block;
+					color: @3;
+					small{
+						color: @8;
+						font-size: 0.26rem;
+						margin-left: 0.1rem;
+					}
+				}
+				input{
+					width: 6.86rem;
+					height: 0.80rem;
+					text-indent: 0.28rem;
+					outline: none;
+					border: 1px solid @8;
+					.radius(3px);
+					color: @3;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.btn-signin{
+	.px2rem(width,750);
+	.px2rem(height,98);
+	.margin;
+	margin-top: 0.80rem;
+	font-size: 0.3396rem;
+	background-color: @599;
+	color: @f;
+	display: block;
+	outline: none;
+	border: none;
+}
+
+
+
+
+
+
+

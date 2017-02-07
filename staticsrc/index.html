@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>补贴蓝</title>
+    <script type="text/javascript">
+        //设置html的font-size
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+    <script>
+        function connectTeshehuiJSBridge (callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                let ua = navigator.userAgent;
+                if (ua.indexOf('Android') > -1 || ua.indexOf('android') > -1) {
+                    document.addEventListener(
+                        'WebViewJavascriptBridgeReady',
+                        function() {
+                            callback(TeshehuiJSBridge)
+                        },
+                        false
+                    );
+                } else {
+                    if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+                    window.WVJBCallbacks = [callback];
+                    let WVJBIframe = document.createElement('iframe');
+                    WVJBIframe.style.display = 'none';
+                    WVJBIframe.src = 'https://__bridge_loaded__';
+                    document.documentElement.appendChild(WVJBIframe);
+                    setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+                }
+            }
+        }
+    </script>
+    <!--<script src="http://image.teshehui.com/mui/js/lib/vconsole.min.js"></script>-->
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>

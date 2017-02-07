@@ -1,0 +1,118 @@
+@import "base";
+@import "top-nav-bars";
+@import "btm-nav";
+
+
+
+/*******************************分割线***********************************/
+body{
+	
+}
+
+
+section{
+	.all;
+	background-color: #f5f5f5;
+	.btl-content{
+		.all;
+		.order-container{
+			.all;
+			.order-list-refund,
+			.order-list-end{
+				.all;
+				.px2rem(height,306);
+				margin-top: 0.20rem;
+				background-color: @f;
+				.order-title{
+					.px2rem(height,79);
+					.padding(0,0.32rem);
+					.por;
+					.hid;
+					color: @fb3;
+					border-bottom: 1px solid @e2;
+					.title-type{
+						.px2rem(width,558);
+						height: @full;
+						line-height: 0.79rem;
+						font-size: 0.26rem;
+						display: inline-block;
+						float: left;
+						.por;
+						.hid;
+						text-indent: 0.20rem;
+						&:after{
+							content: "";
+							width: 3px;
+							height: 0.26rem;
+							background-color: @fb3;
+							.poa;
+							top: 50%;
+							left: 0;
+							.translate3d(@x:0);
+						}
+					}
+					.money-num-o{
+						.px2rem(width,128);
+						height: @full;
+						line-height: 0.79rem;
+						font-size: 0.36rem;
+						display: inline-block;
+						float: left;
+						text-align: right;
+					}
+				}
+				.order-info{
+					.all;
+					.padding(0,0.32rem);
+					.or-cell{
+						.px2rem(height,56.75);
+						.px2rem(line-height,56.75);
+						display: block;
+						i,em{
+							display: inline-block;
+							font-size: 0.26rem;
+							font-style: normal;
+							float: left;
+						}
+						i{
+							.px2rem(width,150);
+							color: @6;
+						}
+						em{
+							color: @3;
+						}
+					}
+				}
+			}
+			.order-list-end{
+				.order-title{
+					color: @12b;
+					.title-type{
+						color: @12b;
+						&:after{
+							content: "";
+							width: 3px;
+							height: 0.26rem;
+							background-color: @12b;
+							.poa;
+							top: 50%;
+							left: 0;
+							.translate3d(@x:0);
+						}
+					}
+					.money-num-o{}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

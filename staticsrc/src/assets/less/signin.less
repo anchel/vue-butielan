@@ -1,0 +1,181 @@
+@import 'base';
+
+
+/*******************************分割线***********************************/
+
+body{
+	background-color: @f;
+}
+
+header{
+	.all;
+	.banner{
+		.px2rem(width,750);
+		.px2rem(height,384);
+		background-color: #5991f3;
+		background-image: -webkit-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -moz-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -ms-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: -o-linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        background-image: linear-gradient(bottom,rgba(89,145,243,1),rgba(128,174,255,1)) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(89,145,243,1)', endColorstr='rgba(128,174,255,1)') !important;
+		.por;
+		.hid;
+		img{
+			.px2rem(width,354);
+			.px2rem(height,132);
+			.margin;
+			margin-top: 1.34rem;
+			display: block;	
+		}
+	}
+}
+
+
+section{
+	.all;
+	.btl-content{
+		.all;
+		.px2rem(width,640);
+		.margin;
+		background-color: @f;
+		.btl-signin{
+			.all;
+			margin-top: 0.2rem;
+			.field{
+				width: 6.4rem;
+          		height: 1.12rem;
+				font-size: 0.2796rem;
+				color: @b;
+				border-bottom: 1px solid @e2;
+				.margin;
+				.por;
+				.hid;
+				.fd-icon{
+					.px2rem(width,54);
+					display: inline-block;
+					height: @full;
+					float: left;
+					img{
+						.px2rem(width,54);
+						.px2rem(height,54);
+						.px2rem(margin-top,39);
+						display: block;
+					}
+				}
+				input{
+					.px2rem(width,580);
+					height: @full;
+					margin-top: 0.09rem;
+					border: none;
+					outline: none;
+					float: left;
+					text-indent: 0.35rem;
+				}
+			}
+		}
+        .btl-forgetpass{
+            .all;
+            margin-top: 0.2rem;
+            .field{
+                width: 6.4rem;
+                height: 1.12rem;
+                font-size: 0.2796rem;
+                color: @b;
+                border-bottom: 1px solid @e2;
+                .margin;
+                .por;
+                .hid;
+                .fd-icon{
+                    .px2rem(width,178);
+                    height: 0.38rem;
+                    float: left;
+                    display: inline-block;
+                    border-left: 1px solid @e2;
+                    margin-top: 0.37rem;
+                    font-style: normal;
+                    text-align: center;
+                    color: @6;
+                }
+                input{
+                    .px2rem(width,461);
+                    height: @full;
+                    margin-top: 0.09rem;
+                    border: none;
+                    outline: none;
+                    float: left;
+                    color: @3;
+                }
+            }
+            .nobinding{
+                .all;
+                .px2rem(height,46);
+                .px2rem(line-height,46);
+                font-size: 0.24rem;
+                color: #ff0000;
+                img{
+                    width: 0.32rem;
+                    height: 0.32rem;
+                    display: inline-block;
+                    margin-top: -0.08rem;
+                }
+            }
+        }
+	}
+	.fr-container{
+		.all;
+		.nav-tabs{
+			.all;
+			.flexbox;
+			height: 0.80rem;
+			line-height: 0.80rem;
+			border-bottom: 1px solid @e2;
+			.a-cell{
+				.flexvalue;
+				color: @3;
+				font-size: 0.28rem;
+				box-sizing: border-box;
+				.por;
+				.hid;
+			}
+			.active{
+				&:after{
+					content: "";
+					width: 1.27rem;
+					height: 0.05rem;
+					background-color: @599;
+					.poa;
+					bottom: 0%;
+					left: 50%;
+					//.translate3d(@y:0);
+					margin-left: -0.635rem;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+
+.btn-signin{
+	.px2rem(width,640);
+	.px2rem(height,88);
+	.radius(3px);
+	.margin;
+	margin-top: 0.80rem;
+	font-size: 0.3396rem;
+	background-color: @599;
+	color: @f;
+	display: block;
+	outline: none;
+	border: none;
+}
+.forget{
+	color: @6;
+	font-size: 0.26rem;
+	display: block;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: right;
+}

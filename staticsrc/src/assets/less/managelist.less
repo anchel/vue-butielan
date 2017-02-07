@@ -1,0 +1,62 @@
+@import "base";
+
+.my-account {
+    .all;
+    background-color: @f;
+    margin-top: 0.20rem;
+    padding-left: 0.32rem;
+    .ac-cell {
+        height: 0.95rem;
+        display: block;
+        border-bottom: 1px solid @e2;
+        padding-right: 0.32rem;
+        .flexbox;
+        &:nth-last-of-type(1) {
+            border-bottom: 0px solid @e2;
+        }
+        .c-img {
+            .flexvalue;
+            max-width: 0.50rem;
+            height: @full;
+            img {
+                width: 0.50rem;
+                height: 0.50rem;
+                display: block;
+            }
+        }
+        .c-txt {
+            .flexvalue;
+            font-size: 0.28rem;
+            color: @3;
+            -webkit-box-align: start;
+            -ms-box-align: start;
+            text-align: left;
+            text-indent: 0.1rem;
+        }
+        .c-jump {
+            .flexvalue;
+            max-width: 0.32rem;
+            height: @full;
+            img {
+                width: 0.32rem;
+                height: 0.32rem;
+                display: block;
+            }
+        }
+    }
+}
+
+.btn-signout {
+    width: 7.50rem;
+    height: 0.86rem;
+    display: block;
+    background-color: @f;
+    font-size: 0.28rem;
+    color: @8;
+    margin-top: 0.80rem;
+    outline: none;
+    border: none;
+}
+
+
+
